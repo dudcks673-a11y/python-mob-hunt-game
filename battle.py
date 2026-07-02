@@ -1,2 +1,17 @@
+class BattleManager:
+    def is_monster_dead(self, monster):
+        """
+        몬스터의 HP가 0 이하인지 확인하여 사망 여부를 반환합니다.
+        """
+        return monster.hp <= 0
 
-#pass
+    def player_attack(self, player, monster):
+        """
+        플레이어가 몬스터를 공격하고 상태 메시지를 출력합니다.
+        """
+        player.attack(monster)
+        
+        if self.is_monster_dead(monster):
+            print(f"{monster.name}을(를) 처치했습니다!")
+        else:
+            print(f"{monster.name}의 남은 HP: {monster.hp}")
