@@ -23,7 +23,7 @@ class Game:
 
             if choice == "1":
                 # 사용자가 1을 입력하면 플레이어가 몬스터를 공격합니다.
-                self.battle_manager.attack(self.player, self.monster)
+                self.battle_manager.player_attack(self.player, self.monster)
                 
                 # 몬스터 HP가 0 이하가 되면 게임을 종료합니다.
                 if self.monster.hp <= 0:
