@@ -27,5 +27,5 @@ class Player:
         print(f"HP : {self.hp}")
         print(f"공격력 : {self.attack_power}")
         print(f"방어력 : {self.defense}")
-        #수정 완료 1
+        #수정 완료 12
     
