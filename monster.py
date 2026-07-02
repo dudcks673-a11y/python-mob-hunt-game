@@ -37,26 +37,3 @@ red_mushroom = Mushroom("빨간버섯🍄:", 50, 8, 2)
 blue_slime = Slime("파랑슬라임🌀:", 20, 3, 1)
 red_slime = Slime("빨간슬라임🐙:", 40, 6, 2)
 
-
-blue_mushroom.info()
-blue_mushroom.attack()
-blue_mushroom.run()
-blue_mushroom.jump()
-print()
-
-red_mushroom.info()
-red_mushroom.attack()
-red_mushroom.run()
-red_mushroom.jump()
-print()
-
-blue_slime.info()
-blue_slime.attack()
-blue_slime.split()
-blue_slime.split()
-print()
-
-red_slime.info()
-red_slime.attack()
-red_slime.split()
-red_slime.split()
