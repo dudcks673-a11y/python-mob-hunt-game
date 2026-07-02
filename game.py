@@ -32,7 +32,7 @@ class Game:
                 self.battle_manager.player_attack(self.player, self.monster)
                 
                 # 몬스터 HP가 0(이하)이면 게임을 종료합니다.
-                if self.monster.hp <= 0:
+                if self.battle_manager.is_monster_dead(self.monster):
                     break
             elif choice == "2":
                 self.player.info()
