@@ -4,12 +4,12 @@ from battle import BattleManager
 
 
 class Game:
-    def __init__(self, player=None, monster=None, battle_manager=None):
+    def __init__(self, player, monster, battle_manager):
         # Game 클래스는 player, monster, battle_manager를 가집니다.
         # 파라미터가 제공되면 주입받아 사용하고, 없을 경우 monster.py 등의 기본 객체명을 준수하여 매핑합니다.
-        self.player = player if player is not None else Player()
-        self.monster = monster if monster is not None else blue_mushroom
-        self.battle_manager = battle_manager if battle_manager is not None else BattleManager()
+        self.player = player
+        self.monster = monster
+        self.battle_manager = battle_manager
 
     def show_menu(self):
         # 메뉴는 다음과 같이 정확히 출력합니다.
@@ -29,7 +29,7 @@ class Game:
 
             if choice == "1":
                 # 사용자가 1을 입력하면 플레이어가 몬스터를 공격합니다.
-                self.battle_manager.attack(self.player, self.monster)
+                self.battle_manager.player_attack(self.player, self.monster)
                 
                 # 몬스터 HP가 0(이하)이면 게임을 종료합니다.
                 if self.monster.hp <= 0:
