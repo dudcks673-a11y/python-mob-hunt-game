@@ -16,7 +16,7 @@ class Player:
         if damage < 1:
             damage = 1
             
-        # 몬스터 체력 감소
+     # 몬스터 체력 감소
         monster.hp -= damage
         if monster.hp < 0:
             monster.hp = 0     
@@ -27,5 +27,5 @@ class Player:
         print(f"HP : {self.hp}")
         print(f"공격력 : {self.attack_power}")
         print(f"방어력 : {self.defense}")
-        #수정 완료 
+        #수정 완료 1
     
