@@ -26,22 +26,3 @@ class Player:
         print(f"공격력 : {self.attack_power}")
         print(f"방어력 : {self.defense}")
     
-class Rogue(Player):
-    def __init__(self, name):
-        super().__init__(name, hp=70, attack_power=18, defense=3)
-        self.job = "도적"
-
-    def info(self):
-        print(f"[{self.job}]")
-        super().info()
-
-# pyrefly: ignore [parse-error]
-class Warrior(Player):
-    def __init__(self, name):
-        # 전사 세팅: 높은 체력과 방어력, 낮은 공격력
-        super().__init__(name, hp=120, attack_power=8, defense=10)
-        self.job = "전사"
-
-    def info(self):
-        print(f"[{self.job}]")
-        super().info()
