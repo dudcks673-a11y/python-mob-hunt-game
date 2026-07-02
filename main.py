@@ -1,5 +1,5 @@
 from player import Player
-from monster import BlueMushroom
+from monster import blue_mushroom
 from battle import BattleManager
 from game import Game
 
@@ -7,7 +7,7 @@ from game import Game
 def main():
     # 1. 플레이어, 몬스터, 배틀 매니저 객체 생성
     player = Player(name="용사🗡️", hp=100, attack_power=15, defense=5)
-    monster = BlueMushroom(name="파랑버섯🥏", hp=25, attack_power=4, defense=1)
+    monster = blue_mushroom(name="파랑버섯🥏", hp=25, attack_power=4, defense=1)
     battle_manager = BattleManager()
     
     # 2. Game 객체 생성 및 주입
