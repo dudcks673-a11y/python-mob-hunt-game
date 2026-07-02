@@ -1,3 +1,4 @@
+
 class Player:
     def __init__(self, name, hp, attack_power, defense):
         self.name = name
@@ -17,7 +18,8 @@ class Player:
             
         # 몬스터 체력 감소
         monster.hp -= damage
-        
+        if monster.hp < 0:
+            monster.hp = 0     
         print(f"{monster.name}에게 {damage}의 데미지를 입혔습니다! (남은 HP: {monster.hp})\n")
 
     def info(self):
@@ -25,4 +27,5 @@ class Player:
         print(f"HP : {self.hp}")
         print(f"공격력 : {self.attack_power}")
         print(f"방어력 : {self.defense}")
+        #수정 완료 
     
