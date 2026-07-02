@@ -35,8 +35,8 @@ class Rogue(Player):
         print(f"[{self.job}]")
         super().info()
 
- # pyrefly: ignore [parse-error]
- class Warrior(Player):
+# pyrefly: ignore [parse-error]
+class Warrior(Player):
     def __init__(self, name):
         # 전사 세팅: 높은 체력과 방어력, 낮은 공격력
         super().__init__(name, hp=120, attack_power=8, defense=10)
